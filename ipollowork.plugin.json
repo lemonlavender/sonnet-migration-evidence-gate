@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 2,
+  "id": "sonnet-migration-evidence-gate",
+  "name": "Sonnet Migration Evidence Gate",
+  "description": "Evaluate a Claude model migration with paired workload evidence, normalized cost, quality gates, and a reversible rollout plan.",
+  "source": {
+    "format": "ipollowork-extension-manifest",
+    "origin": "local",
+    "trusted": false
+  },
+  "package": {
+    "version": "1.0.0",
+    "publisher": { "id": "lemonlavender", "name": "lemonlavender" },
+    "updateId": "lemonlavender/sonnet-migration-evidence-gate",
+    "compatibility": { "ipollowork": ">=0.50.12" }
+  },
+  "resources": [
+    {
+      "type": "skill",
+      "id": "sonnet-migration-evidence-gate",
+      "label": "Sonnet Migration Evidence Gate",
+      "description": "Turn paired baseline and candidate runs into a defensible model migration decision.",
+      "path": "skills/sonnet-migration-evidence-gate",
+      "required": true
+    }
+  ]
+}
